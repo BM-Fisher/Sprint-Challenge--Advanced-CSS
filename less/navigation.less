@@ -1,1 +1,26 @@
 // Navigation code here
+
+nav {
+  .top-bottom();
+  background-color: @wild-sand;
+  padding-bottom: 10px;
+
+  h1 {
+    font-size: 4rem;
+    padding: 10px 0 15px 0;
+
+    @media @phone {
+      font-size: 3.4rem;
+    }
+  }
+  a {
+    padding: 15px;
+    text-decoration: none;
+    color: @title-text;
+    .top-bottom-text();
+
+    @media @phone {
+      padding: 12px;
+    }
+  }
+}

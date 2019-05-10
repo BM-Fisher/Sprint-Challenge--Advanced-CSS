@@ -135,7 +135,7 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  color: #5e6164;
 }
 h1,
 h2,
@@ -143,7 +143,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  color: #23293b;
 }
 h2 {
   font-size: 3.2rem;
@@ -159,6 +159,39 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+nav {
+  text-align: center;
+  color: #23293a;
+  background-color: #f6f6f6;
+  padding-bottom: 10px;
+}
+nav h1 {
+  font-size: 4rem;
+  padding: 10px 0 15px 0;
+}
+@media (max-width: 500px) {
+  nav h1 {
+    font-size: 3.4rem;
+  }
+}
+nav a {
+  padding: 15px;
+  text-decoration: none;
+  color: #23293a;
+  font-size: 1.6rem;
+  font-family: Ubuntu, sans-serif;
+  line-height: 1.4;
+}
+@media (max-width: 500px) {
+  nav a {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 500px) {
+  nav a {
+    padding: 12px;
+  }
 }
 footer {
   color: #22283B;
