@@ -134,7 +134,7 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: #5e6164;
 }
 h1,
@@ -142,18 +142,33 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
   color: #23293b;
 }
 h2 {
   font-size: 3.2rem;
 }
+@media (max-width: 500px) {
+  h2 {
+    font-size: 2.8rem;
+  }
+}
 h3 {
   font-size: 2.8rem;
+}
+@media (max-width: 500px) {
+  h3 {
+    font-size: 2.4rem;
+  }
 }
 p {
   font-size: 1.6rem;
   line-height: 1.4;
+}
+@media (max-width: 500px) {
+  p {
+    font-size: 1.2rem;
+  }
 }
 .container {
   max-width: 800px;
@@ -194,14 +209,22 @@ nav a {
   }
 }
 footer {
-  color: #22283B;
+  text-align: center;
+  color: #23293a;
   background: #f4f4f4;
   padding: 20px 0;
   border: 1px double #e0e0e0;
   border-radius: 10px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  font-size: 1.6rem;
+  font-family: Ubuntu, sans-serif;
+  line-height: 1.4;
+}
+@media (max-width: 500px) {
+  footer {
+    font-size: 1.4rem;
+  }
 }
 .home .intro h2 {
   padding: 15px;
@@ -214,11 +237,31 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .launch {
+    display: none;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    margin: 20px 20px;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -236,8 +279,21 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    margin-top: 15px;
+    flex-direction: column-reverse;
+    margin-top: 10px;
+    padding: 15px 15px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -249,8 +305,39 @@ footer {
   width: 46%;
   margin-left: 4%;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    align-self: center;
+    margin: 0 5% 15px 5%;
+  }
+}
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+button {
+  width: 9rem;
+  padding: 10px 15px;
+  color: #f6f7f8;
+  background-color: #23293a;
+  font-size: 2rem;
+  font-family: Ubuntu, sans-serif;
+  border-radius: 0.6rem;
+}
+@media (max-width: 500px) {
+  button {
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 20px;
+  }
+}
+button:hover {
+  background-color: #99c1d7;
+  color: #23293b;
+}
+header img {
+  width: 100%;
+  border-radius: 0.4rem;
 }
